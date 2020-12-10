@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc src/main.ts",
-    "start": "electron dist/main.js"
+    "build": "webpack",
+    "start": "npm run build && electron dist/main.js"
   },
   "keywords": [],
   "author": "",
