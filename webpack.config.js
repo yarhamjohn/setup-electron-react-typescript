@@ -44,7 +44,15 @@ const reactConfiguration = {
           test: /\.ts(x?)$/,
           include: /src/,
           use: [{ loader: 'ts-loader' }]
-        }
+        },
+	    {
+		  test: /\.s[ac]ss$/i,
+		  use: [
+			'style-loader',
+			'css-loader',
+			'sass-loader',
+		  ],
+		}
       ]
     },
     output: {
